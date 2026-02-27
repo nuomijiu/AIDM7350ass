@@ -1,7 +1,6 @@
-/* 新增：全局容器 - 核心居中样式 */
 .container {
     max-width: 1000px;    /* 内容最大宽度，可根据需求调整 */
-    margin: 0 auto;       /* 上下0边距，左右自动 - 实现水平居中 */
+    margin: 0 auto;       /* 上下0边距，左右自动 */
     padding: 0 10px;      /* 左右内边距，防止内容贴边 */
 }
 
@@ -23,7 +22,7 @@ body {
 h1 {text-align: center;}
 
 .navbar {
-    background-color: #ffe092; /* 浅灰色背景 */
+    background-color: #ffe092; 
     padding: 10px 20px;        /* 内边距 */
     margin: 20px 0px;            /* 上下外边距 */
     border-radius: 10px;        /* 圆角 */
@@ -49,7 +48,7 @@ h1 {text-align: center;}
 /* 内容区域样式（让锚点跳转更明显） */
 .content-section {
     border-radius: 10px;
-    margin: 50px 0;            /* 上下间距，方便测试跳转 */
+    margin: 50px 0;            
     padding: 20px;
     border: 3px solid #c7c4b6;
     text-align: center;
@@ -65,24 +64,22 @@ h1 {text-align: center;}
 
 #videos {background-color: #f6d8e1;}
 
-/* Pictures 区域专属布局 - 核心：Flex 网格 */
 #pictures {
     /* 开启弹性布局 */
     display: flex;
-    /* 自动换行（一行放不下就换一行） */
+    /* 自动换行 */
     flex-wrap: wrap;
     /* 图片之间均匀分布，左右间距一致 */
     justify-content: space-around;
     /* 上下图片的间距 */
     gap: 15px;
-    /* 取消默认文字居中，让容器排版更灵活 */
+    /* 取消默认文字居中 */
     text-align: center;
     padding: 20px 0;
 }
 
-/* 统一所有小猫图片样式（替换行内 width/height） */
 #pictures img {
-    /* 每张图片的宽度（建议 30%，一行放 3 张；改 25% 则一行 4 张） */
+    
     width: 30%;
     /* 高度自动，保持图片比例，不拉伸变形 */
     height: 30%;
@@ -119,6 +116,7 @@ h1 {text-align: center;}
     width: 80%; /* 视频占容器宽度的80%，不会太宽 */
     max-width: 640px; /* 最大宽度，防止在大屏幕上太夸张 */
     aspect-ratio: 16 / 9; /* 强制16:9的视频比例，最关键！ */
-    border-radius: 12px; /* 圆角，和你的页面风格统一 */
+    border-radius: 12px; 
     box-shadow: 0 3px 10px rgba(255, 153, 153, 0.3); /* 柔和阴影 */
+
 }
